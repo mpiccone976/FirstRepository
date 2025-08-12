@@ -50,23 +50,41 @@ if len(first_name) > len(last_name):
     print("El nombre es más largo que el apellido")
 else:
     print("El apellido es más largo que el nombre")
-num_one = 5
-num_two = 4 
-total = num_one + num_two
-difference = num_one - num_two
-product = num_one * num_two
-division = num_one / num_two
-remainder = num_two % num_one
-exp = num_one ** num_two
-floor_division = num_one // num_two
-print("Total:", total)
-print("Difference:", difference)
-print("Product:", product)
-print("Division:", division)
-print("Remainder:", remainder)
-print("Exponent:", exp)
-print("Floor Division:", floor_division)
 
 input("First Name: "), input("Last Name: "), input("Country: "), input("Age: "), input("Is Married: ") #input se utiliza para recibir datos del usuario
 
 help("keywords") #muestra las palabras reservadas de Python 
+print("")
+
+# int to float
+num_int = 10
+print("num_int:",num_int)         # 10
+num_float = float(num_int)
+print("num_float:", num_float)   # 10.0
+print("")
+
+# float to int
+gravity = 9.81
+print("Gravity:", int(gravity))             # 9
+print("")
+
+# int to str
+num_int = 10
+print("num_int:", num_int)                  # 10
+num_str = str(num_int)
+print("num_str:", num_str)                  # "10"
+print("")
+
+# str to int or float
+num_str = "10.6"
+num_float = float(num_str)
+print("num_float", float(num_str))  # 10.6
+num_int = int(num_float)
+print("num_int", int(num_int))      # 10
+print("")
+
+# str to list
+first_name = "Asabeneh"
+print("First_Name:", first_name)               # "Asabeneh"
+first_name_to_list = list(first_name)
+print("First_Name_to_List:", first_name_to_list)            # ["A", "s", "a", "b", "e", "n", "e", "h"]
